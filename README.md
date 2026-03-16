@@ -65,9 +65,9 @@ $invoiceId = $response->getData()->getId();
 ```
 
 ## Obsługa błędów
-- `EmpikValidationException` – błędy walidacji parametrów (np. brak tracking_number przy statusie SENT)
-- `EmpikApiException` – status `error` lub `warning` z API (z kodami błędów)
-- `EmpikHttpException` – problemy HTTP/transport lub nieprawidłowy JSON
+- `EmpikValidationException` - błędy walidacji parametrów (np. brak tracking_number przy statusie SENT)
+- `EmpikApiException` - status `error` lub `warning` z API (z kodami błędów)
+- `EmpikHttpException` - problemy HTTP/transport lub nieprawidłowy JSON
 
 ## Testy
 ```bash
@@ -76,11 +76,11 @@ vendor/bin/phpunit
 ```
 
 ## Struktura katalogów
-- `src/Config` – konfiguracja (EmpikConfig)
-- `src/Client` – niski poziom HTTP (EmpikHttpClient, interfejs)
-- `src/Service` – API wysokiego poziomu (OrdersService)
-- `src/Dto` – DTO dla zamówień, produktów, płatności, faktur, błędów
-- `src/Response` – obiekty odpowiedzi i statusy
-- `src/Exception` – wyjątki domenowe
-- `config/services.php` – przykładowa konfiguracja serwisów Symfony
-- `tests` – testy jednostkowe i integracyjne (mock HTTP)
+- `src/Config` - konfiguracja (EmpikConfig)
+- `src/Client` - niski poziom HTTP (EmpikHttpClient, interfejs)
+- `src/Service` - API wysokiego poziomu (OrdersService)
+- `src/Dto` - DTO dla zamówień, produktów, płatności, faktur, błędów
+- `src/Response` - obiekty odpowiedzi i statusy
+- `src/Exception` - wyjątki domenowe
+- `config/services.php` - przykładowa konfiguracja serwisów Symfony
+- `tests` - testy jednostkowe i integracyjne (mock HTTP)
